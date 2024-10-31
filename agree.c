@@ -11,6 +11,6 @@ int main(void)
         printf("Agree!\n");
     }
     else if (c == 'n' || c == 'N') {
-        printf("Disagreed!\n");
+        printf("Disagree!\n");
     }
 }
