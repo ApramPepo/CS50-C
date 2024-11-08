@@ -6,7 +6,7 @@ int main(void)
     int number[] = {30, 1000, 1, 10, 5, 50, 100, 200};
 
     int n = get_int("Number: ");
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < 8; i++)
     {
         if (number[i] == n)
         {
