@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(void)
 {
-    char *s = "HI!";
-    char *p = &*s;
-    printf("%p\n", p);
+    char *s = "Hello";
+    printf("%s\n", s);
 }
 
 
