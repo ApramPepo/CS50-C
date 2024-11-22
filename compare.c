@@ -13,6 +13,6 @@ int main(void)
     }
     else
     {
-        printf("Lol!\n");
+        printf("Lol, sike!\n");
     }
 }
