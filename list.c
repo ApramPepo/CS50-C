@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int *list = malloc(4 * sizeof(int));
+    int *list = malloc(3 * sizeof(int));
     if (list == NULL)
     {
         printf("aborted\n");
@@ -13,11 +13,10 @@ int main(void)
     list[0] = 1;
     list[1] = 2;
     list[2] = 3;
-    list[3] = 4;
 
     //
 
-    int *tmp = malloc(4 * sizeof(int))
+    int *tmp = realloc(list, 4 * sizeof(int))
     if (tmp == NULL)
     {
         free(list);
@@ -33,9 +32,9 @@ int main(void)
 
     list = tmp;
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 3; i++)
     {
-        printf("%i\n", list[i]);;
+        printf("%i\n", list[i]);
     }
     return 0;
 }
